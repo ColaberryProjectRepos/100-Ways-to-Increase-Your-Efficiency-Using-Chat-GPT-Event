@@ -1,0 +1,47 @@
+
+SQL Server - Writing complex SQL queries to retrieve and manipulate data
+10
+<div>
+<span style="color:green;">Example 1:</span></div><div>Given the structure of the tables <b>[Table Structure]</b>, return me back queries that satisfy my requirements&nbsp;&nbsp;<b>[Requirements]</b></div><div><br></div><div><br></div><div><br></div><div><br></div><div> </div><div>
+   <span style="color:red;">Chat GPT Prompt:</span> </div><div>Given the structure of the tables&nbsp;</div><div><b><br></b></div><div><b>[</b></div><div><b>Table: ADF_Path (PathID, PathName, PathDesc)</b></div><div><b>Table: ADF_Course (CourseID, CourseName, PathID, CourseOrder, CourseDesc, CourseActive, Insertdate)</b></div><div><b>Table: ADF_Section (SectionID, SectionName, CourseID, SectionOrder, SectionDesc, RoleID, SectionActive, Insertdate)</b></div><div><b>Table: ADF_Event (EventID, EventName, DocumentID, SectionID, EventOrder, EventActive, Insertdate, Repeat, Ratings, AvgRating, Visits)</b></div><div><b>]</b></div><div><b><br></b>, return me back queries that satisfy my requirements&nbsp;&nbsp;</div><div><b><br></b></div><div><b>[</b></div><div><p class="MsoListParagraphCxSpFirst" style="text-indent:-.25in;line-height:150%;
+mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;<b>&nbsp; </b></span></span><!--[endif]--><span style="font-family:&quot;Arial&quot;,sans-serif"><b>How many are active from each
+group.&nbsp; Return the answers in one query
+and put the<o:p></o:p></b></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>&nbsp;results &nbsp;&nbsp;in a table variable.<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a.
+Paths<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.
+Courses<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.
+Sections<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.
+Events<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>&nbsp;</b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>2. How many documents have been created
+but not attached to the Curriculum.<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>3. &nbsp;How many active events are there in each Course?&nbsp; Sort from largest to smallest<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="text-indent:0in;line-height:150%"><span style="font-family:&quot;Arial&quot;,sans-serif"><b>4. &nbsp;Create a View that outlines the whole
+curriculum in the correct order.</b></span></p><p class="MsoNormal" style="text-indent:0in;line-height:150%"><b>]</b></p></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>   <span style="color:purple;">Follow up:</span> </div><div>1. Give me the SQL script to create the tables.</div><div>2. Return the SQL script to add 2 records in each table.<br><br>
+</div><div><span style="color:green;"><br></span></div><div><span style="color:green;"><br></span></div><div><span style="color:green;"><br></span></div><div><span style="color:green;"><br></span></div><div><span style="color:green;"><br></span></div><div><span style="color:green;"><br></span></div><div><span style="color:green;">Example:</span>
+<br>What is the best way to manipulate data in the "{{<b>columnName</b>}}" column of my "{{<b>tableName</b>}}" table based on a set of conditions specified in a list of values "{{<b>valueList</b>}}"?
+</div><div>   <span style="color:red;">Chat GPT Prompt:</span> </div><div>What is the best way to manipulate data in the "quantity" column of my "products" table based on a set of conditions specified in a list of values "low, medium, high"?
+</div><div>   <span style="color:purple;">Follow up:</span> </div><div>Can you provide an example of the query with the placeholders filled in?
+<br></div><div><br></div><div><br></div><div><br></div><div><br>
+<span style="color:green;">Example:</span><br>
+How can I join data from two or more tables "{{<b>table1</b>}}" and "{{<b>table2</b>}}" to return only specific columns "{{columnList}}"? </div><div>
+   <span style="color:red;">Chat GPT Prompt:</span> </div><div>How can I join data from two or more tables "customers" and "orders" to return only specific columns "customer_name, order_date, order_total"?
+</div><div>   <span style="color:purple;">Follow up:</span> </div><div>Can you provide an example of the query with the placeholders filled in?
+</div>
+
+
+
