@@ -1,0 +1,42 @@
+
+SSRS - Customizing report layouts using tables, matrices, and charts
+31
+<p><span style="color: green;">Example 1:</span><br>
+Given the requirements [<b>requirements</b>]&nbsp; and the table structure <b>[Table Structure]</b>, give me step by step instructions on how to build the Course Count gauge.</p><p><br></p><div><br></div><div><br></div><div><br></div><p><span style="color: rgb(255, 0, 0);">Chat GPT Prompt:</span></p><p>Given the requirements </p><p><b>[</b></p><p><b style="text-indent: 0in;"><i><span style="font-family: Arial, sans-serif;">Create an SSRS Dashboard displaying the following…</span></i></b><b style="text-indent: 0in;"><i><span style="font-family: Arial, sans-serif;"><br></span></i></b></p><p class="MsoNormal" style="text-indent: 0in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">&nbsp;</span></p><p class="MsoListParagraphCxSpFirst" style="text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style="font-family: Arial, sans-serif;">The Dashboard will consist of 3 Gauges.&nbsp;&nbsp;<i><span style="color: rgb(79, 129, 189);">(Positioned at the Top)<o:p></o:p></span></i></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 0.75in; text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">a.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><b><span style="font-family: Arial, sans-serif;">Course Count (Gauge)</span></b><span style="font-family: Arial, sans-serif;">&nbsp;– This will display a gauge showing the Count of all Active Courses<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 0.75in; text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">b.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><b><span style="font-family: Arial, sans-serif;">Section Count (Gauge)</span></b><span style="font-family: Arial, sans-serif;">&nbsp;– This will display a gauge showing the Count of all Active Sections<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 0.75in; text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">c.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><b><span style="font-family: Arial, sans-serif;">Event Count (Gauge)</span></b><span style="font-family: Arial, sans-serif;">&nbsp;– This will display a gauge showing the Count of all Active Events<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">2.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style="font-family: Arial, sans-serif;">The Dashboard will consist of 2 Charts.&nbsp;<i><span style="color: rgb(79, 129, 189);">(Positioned in the middle Top)<o:p></o:p></span></i></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 0.75in; text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">d.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><b><span style="font-family: Arial, sans-serif;">Curriculum Count (Pie Chart)</span></b><span style="font-family: Arial, sans-serif;">&nbsp;– This will display a pie chart showing the Count of Active Paths / Courses / Sections / Events<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 0.75in; text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">e.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><b><span style="font-family: Arial, sans-serif;">Course Event Count (Bar Chart)</span></b><span style="font-family: Arial, sans-serif;">&nbsp;– This will display each course with a label that displays a count of the # of Events in that course.<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">3.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style="font-family: Arial, sans-serif;">The Dashboard will consist of 1 matrix.&nbsp;<i><span style="color: rgb(79, 129, 189);">(Positioned at the Bottom)<o:p></o:p></span></i></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 0.75in; text-indent: -0.25in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">a.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><b><span style="font-family: Arial, sans-serif;">Curriculum Manager (Matrix)</span></b><span style="font-family: Arial, sans-serif;">&nbsp;– This will display a matrix with Drilldowns for every group on the following …<o:p></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-left: 0.75in; text-indent: 0in; line-height: 21px;"><span style="font-family: Arial, sans-serif;">Paths / Courses / Sections / Events</span></p><p><b>]&nbsp; </b></p><p>and the table structure&nbsp;</p><p><b>[</b></p><div><b>Table: ADF_Path (PathID, PathName, PathDesc)</b></div><div><b>Table: ADF_Course (CourseID, CourseName, PathID, CourseOrder, CourseDesc, CourseActive, Insertdate)</b></div><div><b>Table: ADF_Section (SectionID, SectionName, CourseID, SectionOrder, SectionDesc, RoleID, SectionActive, Insertdate)</b></div><div><b>Table: ADF_Event (EventID, EventName, DocumentID, SectionID, EventOrder, EventActive, Insertdate, Repeat, Ratings, AvgRating, Visits)</b></div><div><b><br></b></div><p><b>]</b></p><p>, give me detailed step by step instructions on how to build the Course Count gauge.<span style="color: rgb(255, 0, 0);"><br></span><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br><span style="color: green;">Example 2:</span><br></p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style="font-family: Arial, sans-serif; text-indent: 0in;">Paths
+/ Courses / Sections / Events</span>]?<br>
+<span style="color: red;">Chat GPT Prompt:</span><br>
+What are the steps for customizing a report layout in SSRS using tables, matrices, and charts, specifically for [Code:&nbsp;[PLACEHOLDER1]]?<br>
+<span style="color: purple;">Follow up:</span><br>
+Can you provide an example of how to implement [PLACEHOLDER1] in a report layout in SSRS using tables, matrices, and charts?<br></p><p><br></p><p><br></p><p><br></p><p><br>
+
+<span style="color: green;">Example 3:</span><br>
+What are the best practices for customizing report layouts in SSRS using tables, matrices, and charts for [<b>Error</b>]?</p><p><br></p><p><br>
+<span style="color: red;">Chat GPT Prompt:</span><br>
+What are the best practices for customizing report layouts in SSRS using tables, matrices, and charts for [Error:&nbsp;[PLACEHOLDER2]]?</p><p><br>
+<span style="color: purple;">Follow up:</span><br>
+Can you provide an example of how to troubleshoot [PLACEHOLDER2] in a report layout in SSRS using tables, matrices, and charts?</p><p><br></p><p><br></p><p><br></p>
+
+
+
